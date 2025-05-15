@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<p>
+         <a href="index.html">Home</a> &nbsp;
+         <a href="table.html">Table</a> &nbsp;
+         <a href="form.html">Form</a> &nbsp;
+		 <a href="aboutme.html">About Me</a> &nbsp; 
+		 <a href="https://www.google.com" target="_blank">Google</a>
+      </p>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Music App Preference</title>
+
+  <style>
+
+    /* Basic styling for the form */
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      margin: 20px;
+
+    }
+
+    form {
+
+      max-width: 500px;
+
+      margin: auto;
+
+      padding: 20px;
+
+      border: 1px solid #ccc;
+
+      border-radius: 8px;
+
+      background-color: rgb(200,200,200);
+
+    }
+
+    label {
+
+      font-weight: bold;
+
+    }
+
+    .form-group {
+
+      margin-bottom: 15px;
+
+    }
+
+    select, input[type="text"], textarea {
+
+      width: 100%;
+
+      padding: 8px;
+
+      margin-top: 5px;
+
+      border: 1px solid #ccc;
+
+      border-radius: 4px;
+
+    }
+
+    textarea {
+
+      resize: vertical;
+
+      height: 150px;
+
+    }
+
+    .radio-group input {
+
+      margin-right: 10px;
+
+    }
+
+    .btn-group button {
+
+      padding: 10px 20px;
+
+      border: none;
+
+      background-color: #4CAF50;
+
+      color: white;
+
+      font-size: 16px;
+
+      cursor: pointer;
+
+    }
+
+    .btn-group button[type="reset"] {
+
+      background-color: #f44336;
+
+    }
+
+    .btn-group button:hover {
+
+      opacity: 0.8;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <h2>Music Streaming Survey</h2>
+
+
+  <form action="/submit-feedback" method="post">
+
+    <!-- First Name Field -->
+
+    <div class="form-group">
+
+      <label for="first-name">First Name:</label>
+
+      <input type="text" id="first-name" name="first-name" required>
+
+    </div>
+
+
+    <!-- Last Name Field -->
+
+    <div class="form-group">
+
+      <label for="last-name">Last Name:</label>
+
+      <input type="text" id="last-name" name="last-name" required>
+
+    </div>
+
+
+    <!-- Dropdown Field -->
+
+    <div class="form-group">
+
+      <label for="genre">What is your preferred music streaming platform?:</label>
+
+      <select id="platform" name="platform">
+
+        <option value="spotify">Spotify</option>
+
+        <option value="apple music">Apple Music</option>
+
+        <option value="other">Other</option>
+
+
+   
+
+      </select>
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="watching-device">How often do you stream music?</label>
+
+      <select id="stream frequency" name="stream-frequency">
+
+        <option value="once-a-day">Once a day</option>
+
+        <option value="two-to-three-times-a-week">Two to three times a week</option>
+
+        <option value="daily">Daily</option>
+
+      </select>
+
+    </div>
+
+
+    <!-- Radio Button Group -->
+
+    <div class="form-group radio-group">
+
+      <label>Do you like Spotify, Apple Music, or another platform (if another, please state the platform in the comment box below)?</label><br>
+
+      <input type="radio" id="spotify" name="Spotify" value="spotify">
+
+      <label for="spotify">Spotify</label>
+
+      <input type="radio" id="apple" name="Apple Music" value="apple">
+
+      <label for="apple">Apple Music</label>
+	  
+	 
+
+    </div>
+
+
+    <!-- Comment Box -->
+
+    <div class="form-group">
+
+      <label for="comments">Comments:</label>
+
+      <textarea id="comments" name="comments" placeholder="Share your thoughts..." required></textarea>
+
+    </div>
+
+
+    <!-- Submit and Reset Buttons -->
+
+    <div class="btn-group">
+
+      <button type="submit">Submit</button>
+
+      <button type="reset">Reset</button>
+
+    </div>
+
+  </form>
+
+
+</body>
+
+</html>
